@@ -1,0 +1,181 @@
+=================
+Git
+=================
+collabarate with team
+
+Readme.md files are needed and will be the description of the project
+git 
+Read me must be in the root folder not the src folder
+
+To set up a githiub rep for a project you will need to do the following:
+
+1) you must initzile the rep when you want to add something for the first time 
+	so command you will need to use the command: git init
+	Note: if you did not create a read me file in project then you can use the:git add Readme.md command
+
+2) after initziling you must add all files using the command: git add .
+
+3) Now to you will need to commit the files use the following: git commit -m "Commit message"
+	NOTE: you may be asked to use the git --golbal user.email "your email" in oder to commit
+4) Next use the git branch -M main command
+
+5) After committing you must add the origin or the repsitory to the project with: git remote add origin (repository web address)
+
+6) Last you push the project to the repository with the command: get push -u origin main	
+	NOTE: You may be asked to connect with github through the web browser
+
+After setting up the github for the project will not need to go over everything with you make changes you will only need to do the following:
+
+1) git add . 
+
+2) git commit -m "commit message"
+
+3) git push
+
+Jvm will call the main and start running the programs
+
+
+================================
+FUNCTION/METHOD
+================================
+A method is a block of code that will run when it is called.
+
+You can pass data, known as parameters, into a method
+Methods are used to perform certain actions and they are known as functions.
+
+Why use Methods?
+To reuse code: Define the code once and use it many times
+
+Why do we need to create a method?
+ it is so that we can find smaller parts of the code if there is an error. If it is in the main method then it will harder to fix anything that is broken.
+
+
+================================
+SYNTAX COLORING 
+================================
+NOTE: The follow only applies if the background of the editor is WHITE. Colors will change if background is another color.
+
+Classes) A user defined type (Class or Interface) = Dark Green
+Constants) A variable with a value that cannot be altered during execution = Blue(Italic)
+Deprecated members) An unused memeber which still appears while transitioning to new members = Black(Strikethrough)
+Fields) A reference to a class variable = Dark Blue
+Functions) A refernce to a funtion = Black
+Heredoc) A heredoc block representation of a string value = Green
+Internal Classes) A type that was declared by the PHP = Dark Blue
+Internal Constants) A contstant that was declared by the PHP = Dark Blue(Bold and Italic) 
+Internal Functions) A function that was declared by the PHP = Dark Blue
+Keywords) A keyword that was declared by PHP = Purple(Bold)
+Methods) A reference to a method = Black
+Multi-line Comment) A comment that spans more than one line ("**/_") = Green
+Normal) Any section that does not have any specific description that applies to it = Black
+Number) A number = Black
+Parameter Variables) A variable used in a method which refers to arguments in the method = Black(Underline)
+PHP Tags) the php start and end tags(<?php?>) = Red
+PHPDoc) A standard for commenting Php which allows you to insert annotations in your code = Light Blue(Bold)
+PHPDoc Comment) A readable annotation inserted into your code = Blue
+Single line comment) A comment that spans a single line = Green
+Static Fields) A reference to static field = Dark Blue(Italic)
+Static Methods) A reference to a static method = Black(Italic)
+String) A sequence of characters selected from a set which represent a string of data values = Dark Blue
+Superglobal variables) A reference to Superglobal variables such as $_GLOBALS = Purple(Bold)
+Task Tag) A reference to reminders of actions, work to do, or any other action required = Light Blue(Bold)
+Variable) A reference to a variable = Black
+================
+PARAMETER
+================
+Information can be passed to methods as parameter. Parameters act as variables inside the method.
+
+Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+The following example has a method that takes a String called fname as parameter. When the method is called, we pass along a first name, which is used inside the method to print the full name
+
+public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+}
+
+
+================================
+RETURN TYPES
+================================
+A return statement causes the program control to transfer back to the caller of a method. Every method in Java is declared with a return type and it is mandatory for all java methods. A return type may be a primitive type like int, float, double, a reference type or void type(returns nothing).
+
+There are a few important things to understand about returning the values
+
+The type of data returned by a method must be compatible with the return type specified by the method. For instance, if the return type of some method is boolean, we can not return an integer.
+
+The variable receiving the value returned by a method must also be compatible with the return type specified for the method.
+
+The parameters can be passed in a sequence and they must be accepted by the method in the same sequence.
+
+
+=============================
+PACKAGES
+=============================
+A group of similar types of classes, interface, and sub-packages.
+Packages is java can be categorized in two forms: Built-in and user-define.
+Java.util is an example of built in packages
+
+Java.lang in defualt package when starting a project and does not have to be imported.
+
+Scanner is used to take input from the keyboard and is from the java.util package.
+
+To get access to the scanner class from the Java.util package you must use the following any line above the project class name (public class "class name")
+you must also use the improt keyword also.
+
+Example: on line 1 you can use import Java.util.Scanner
+this will grant you access to the scanner keyword
+
+To call the scanner in a method you can use:
+Scanner sc = new Scanner(System.in); 
+
+
+
+========================
+VAR ARGS/VARIABLE ARGUMENTS
+========================
+Introduced in jdk 1.5
+
+Variable Arguments in Java is a method that takes variable number of arguments. Java simplifies the creation of methods that need to take a variable number of arguments.
+
+Example: public int addNumbers(int...num)
+
+Cannot have more than 1 var augs and if you want to have more that 1 parameter with an the var args then the var args needs to be last in the parthese.
+==============================
+ENHACED FOR LOOP
+==============================
+The Enhanced For Loops was introduced in java 1.5 as a simpler way to iterate through all the elements of a collection. It can be used for arrays. Enhanced For Loops are simple but inflexible. They can be used when you wish to step through elements of the array in the first and last order, and you do not need to know the index of the current element. In all other cases the standard for loop should be preferred.
+
+Normal for loop take 3 parameters
+Enhanced for loop can take more than 3 parameters
+
+==============================
+Array
+==============================
+Arrays are objects which contains elements of a similar data type. Additionally, the elements of an array are stored ina contiguous memory location. Arrays in java inherits the object class and implements the Serializable as well and the Cloneable interfaces. We can store primitive values or objects in array.
+
+[]<<< array bracket
+ex. int num[] = new int[10]
+String names[] = new string[5]
+
+declare and initialize an array in one line
+int mark[] = {1,2,2,2};
+
+Items in an array are referenced via their index in square bracket notation, which begins with 0 for the first element. Arrays also have a length property specifying the length of the array. This is helpful when iterating over arrays with a for loop:
+
+Example:	String[] myArr = {"first", "second", "third"};
+		for (int i = 0; i < myArr.length; i++) {
+  		System.out.println(myArr[i]);
+		}
+============================
+STRINGS
+============================
+Strings are used for storing text.
+
+Strings is a class that stores a sequence of characters and belongs to the Java.lang package
+
+A String variable contains a collection of characters surrounded by double quotes
+
+Example: "Hello world!"
+
